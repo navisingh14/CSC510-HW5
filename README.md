@@ -24,7 +24,7 @@ ansible-playbook -i inventory tasks.yml
 
 
 #### Link to the video
-[Screencast of running tasks, setup and app](https://github.ncsu.edu/nsingh9/CSC510-HWComplexity/blob/master/analysis.js)
+[Screencast of running tasks, setup and app](https://youtu.be/pM4_PIapf-4)
 
 
 * Why should developers use configuration management tools to manage their software programs? What can go wrong?
