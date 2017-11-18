@@ -1,7 +1,7 @@
 # CSC510-HW5
 
 * Why should developers use configuration management tools to manage their software programs? What can go wrong?
-    * Configuration management tools help in keeping track of the  If we don't use these we will have to tackle situations like the following which are costly in terms of time and money:
+    * Configuration Management focuses on establishing, and maintaining the consistency of a system or product throughout its lifetime. CM is a collection of competencies, techniques and tools whose purpose is to ensure the consistency of the system’s requirements, functional attributes and physical properties. Configuration management tools help in keeping track of the older versions of the system configurations and makes the transition smooth. If we don't use these we will have to tackle situations like the following which are costly in terms of time and money:
     Figuring out which system components to change when requirements change.
         * Making changes to an older version of the application that was released a couple of years ago. A CM might be able to take the system back to the older configuration easily
         * Re-doing an implementation because you implemented to meet requirements that had changed and you didn’t communicate that to all parties.
