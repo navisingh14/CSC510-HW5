@@ -3,6 +3,6 @@
 * Why should developers use configuration management tools to manage their software programs? What can go wrong?
     * Because
 * Explain the difference between continuous integration, continuous delivery, and continuous deployment, in your own words.  
-    * Continuous integration: A practice where developers automatically build, test, and analyze a software change in response to every software change committed to the source repository.
-    * Continuous delivery: A practice that ensures that a software change can be delivered and ready for use by a customer by testing in production-like environments
+    * Continuous integration: In this developers merge their code changes to the shared mainline several times a day to avoid the problem of 'integration hell'. The code being merged is automatically tested, analyzed, and verified by an automated build to detect early problems. On the contrary, if the checkout branch is long worked on without being integrated continuously, then it starts to differ tremendously from the mainline branch and gives rise to merging problems.
+    * Continuous delivery: In this the main idea is to produce softwares in short cycles which makes sure that the software can be released faster and more frequently by testing in production-like environments. This reduces the risk involved with delivery big changes in terms of cost and time by aiming for smaller incremental changes in production.
     * Continuous deployment: A practice where incremental software changes are automatically tested, vetted, and deployed to production environments.
