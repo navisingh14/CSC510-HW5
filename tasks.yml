@@ -14,7 +14,7 @@
      become: yes
 
    - name: Updating the versions of bash, openssl, openssh-client, openssh-server
-     apt: pkg={{item}} state=latest update_cache=yes
+     apt: pkg={{item}} state=latest 
      become: yes
      with_items: "{{packages}}"
    

@@ -11,10 +11,7 @@
       with_items: "{{packages}}"
 
     - name: Install forever
-      npm: 
-        name: forever
-        global: yes
-        state: present
+      command: npm install forever -g 
       become:  yes
 
     - name: Cloning git repo
