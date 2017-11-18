@@ -1,4 +1,31 @@
 # CSC510-HW5
+### Name: 
+Navjot Singh
+### Student Id: 
+200154743
+### Unity Id: 
+nsingh9@ncsu.edu
+
+#### How to run playbooks:
+To run setup commands type:
+```
+ansible-playbook -i inventory setup.yml
+```
+To run tasks commands type:
+```
+ansible-playbook -i inventory tasks.yml
+```
+
+#### Link to the setup file
+[Setup.yml](https://github.ncsu.edu/nsingh9/CSC510-HW5/blob/master/setup.yml)
+
+#### Link to the tasks file tasks.yml
+[Tasks.yml](https://github.ncsu.edu/nsingh9/CSC510-HW5/blob/master/tasks.yml)
+
+
+#### Link to the video
+[Screencast of running tasks, setup and app](https://github.ncsu.edu/nsingh9/CSC510-HWComplexity/blob/master/analysis.js)
+
 
 * Why should developers use configuration management tools to manage their software programs? What can go wrong?
     * Configuration Management focuses on establishing, and maintaining the consistency of a system or product throughout its lifetime. CM is a collection of competencies, techniques and tools whose purpose is to ensure the consistency of the system’s requirements, functional attributes and physical properties. Configuration management tools help in keeping track of the older versions of the system configurations and makes the transition smooth. If we don't use these we will have to tackle situations like the following which are costly in terms of time and money:
