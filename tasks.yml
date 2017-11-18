@@ -1,0 +1,41 @@
+- hosts: nodes
+
+  vars: 
+    packages:
+      - bash
+      - openssl
+      - openssh-client
+      - openssh-server
+
+  tasks:
+
+   - name: starting app
+     command: forever start app/main.js 3001
+     become: yes
+
+   - name: Updating the versions of bash, openssl, openssh-client, openssh-server
+     apt: pkg={{item}} state=latest update_cache=yes
+     become: yes
+     with_items: "{{packages}}"
+   
+   - name: remove files in /tmp foler
+     file: 
+        state: absent 
+        path: "/tmp/"
+     become: yes
+
+   #creating the tmp folder again since the absent command deletes the tmp folder too
+   - name: 
+     file:
+        state: directory 
+        path: "/tmp/"
+     become: yes
+ 
+   # emit a debug message with each package
+   - debug:
+       msg: "{{ item }}"
+     with_items: "{{packages}}"
+
+
+
+

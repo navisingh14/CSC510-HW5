@@ -1,0 +1,33 @@
+- hosts: nodes
+
+  vars: 
+    packages:
+      - git
+
+  tasks: 
+    - name: Install git
+      apt: pkg={{item}} state=present update_cache=yes
+      become: yes
+      with_items: "{{packages}}"
+
+    - name: Install forever
+      npm: 
+        name: forever
+        global: yes
+        state: present
+      become:  yes
+
+    - name: Cloning git repo
+      git: 
+         repo: 'https://github.com/CSC-DevOps/App'
+         dest: /home/vagrant/app
+
+    - name: Installing npm packages from package.json file
+      npm:
+        path: /home/vagrant/app/
+
+    # emit a debug message with each package
+    - debug:
+        msg: "{{ item }}"
+      with_items: "{{packages}}"
+
